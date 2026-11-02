@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arlan Narushev | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <!-- Top bar with the theme buttons (Task 1) -->
+  <div class="topbar">
+    <p class="logo">Arlan's Portfolio</p>
+    <div>
+      <button id="light-btn">Light Theme</button>
+      <button id="dark-btn">Dark Theme</button>
+    </div>
+  </div>
+
+  <!-- Task 1: Selectors & CSS -->
+  <section class="card" id="profile">
+    <h1>Welcome to My Portfolio <span class="task">Task 1</span></h1>
+    <div class="profile">
+      <img class="avatar" src="images/profile.png" alt="Arlan Narushev">
+      <div>
+        <p id="greeting">Hello!</p>
+        <h2 id="name">Arlan Narushev</h2>
+        <p id="headline">IT student at Astana IT University</p>
+      </div>
+    </div>
+    <p>
+      I'm a student of group IT-2513 at Astana IT University. I'm learning web development
+      and functional programming in C#, and I like making small tools that solve everyday problems.
+      Every block of this page shows a different part of jQuery. I've been working quite a lot of time on this one tbh... Will you even read this?
+    </p>
+    <button id="headline-btn">Change Headline</button>
+  </section>
+
+  <!-- Task 2: Visibility Methods -->
+  <section class="card" id="about">
+    <h2>👋 About Me <span class="task">Task 2</span></h2>
+    <p>
+      I study and work at the same time, so I've learned to plan my days carefully.
+      This semester I'm studying web technologies, functional programming,
+      discrete mathematics and computer architecture.
+    </p>
+    <p class="status">Currently learning jQuery!</p>
+    <h3>Fun facts</h3>
+    <button id="hide-btn">Hide</button>
+    <button id="show-btn">Show</button>
+    <button id="toggle-btn">Toggle</button>
+    <ul id="fun-facts">
+      <li>I tutor English in my free time.</li>
+      <li>One of my side projects is a bot that sends files to many WhatsApp chats at once.</li>
+      <li>My goal is to become a full-stack developer.</li>
+    </ul>
+  </section>
+
+  <!-- Task 3: Fade Methods -->
+  <section class="card" id="photos">
+    <h2>🖼️ Gallery <span class="task">Task 3</span></h2>
+    <button id="fadein-btn">Fade In</button>
+    <button id="fadeout-btn">Fade Out</button>
+    <button id="fadetoggle-btn">Fade Toggle</button>
+    <div class="gallery">
+      <div>
+        <div class="photo-box"><img src="images/profile.png" alt="My profile picture"></div>
+        <p>That's me</p>
+      </div>
+      <div>
+        <div class="photo-box"><img src="images/coding.png" alt="Code editor with jQuery code"></div>
+        <p>My hobby: coding</p>
+      </div>
+      <div>
+        <div class="photo-box"><img src="images/bot.png" alt="Chat with my broadcast bot"></div>
+        <p>My project: a broadcast bot</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 4: Slide Methods -->
+  <section class="card" id="favorites">
+    <h2>⭐ My Favorites <span class="task">Task 4</span></h2>
+    <p class="muted">Click a heading to open or close it.</p>
+    <button id="open-btn">Open All</button>
+    <button id="close-btn">Close All</button>
+
+    <h3 class="fav-title">My Favorite Music</h3>
+    <div class="fav-text">
+      <p>J-Rock, EDM, hard-rock.</p>
+    </div>
+
+    <h3 class="fav-title">My Favorite Movie</h3>
+    <div class="fav-text">
+      <p>Spider-man: into the spider-verse.</p>
+    </div>
+
+    <h3 class="fav-title">My Favorite Subject</h3>
+    <div class="fav-text">
+      <p>Web Technologies. I like how it all starts as a blank and with each line of code and minute spend on the project it builds up into a full web-page</p>
+    </div>
+  </section>
+
+  <!-- Task 5: Add & Remove Elements -->
+  <section class="card" id="skills">
+    <h2>🛠️ Skills <span class="task">Task 5</span></h2>
+    <ul id="skill-list">
+      <li>Electric guitar</li>
+      <li>English tutoring</li>
+      <li>idk</li>
+      <li>C#(ig?)</li>
+      <li>something</li>
+    </ul>
+    <label for="skill-input">New skill:</label>
+    <input type="text" id="skill-input" placeholder="For example: React">
+    <br>
+    <button id="add-btn">Add Skill</button>
+    <button id="prepend-btn">Prepend Skill</button>
+    <button id="remove-btn">Remove Skill</button>
+    <p id="skill-error"></p>
+  </section>
+
+  <!-- Task 8: Basic Animation (extends Task 5) -->
+  <section class="card" id="levels">
+    <h2>📊 Skill Levels(js random numbers honestly) <span class="task">Task 8</span></h2>
+    <div class="bar-row">
+      <span>HTML &amp; CSS (85%)</span>
+      <div class="bar"><div class="bar-fill" id="bar-html"></div></div>
+    </div>
+    <div class="bar-row">
+      <span>JavaScript (65%)</span>
+      <div class="bar"><div class="bar-fill" id="bar-js"></div></div>
+    </div>
+    <div class="bar-row">
+      <span>jQuery (60%)</span>
+      <div class="bar"><div class="bar-fill" id="bar-jquery"></div></div>
+    </div>
+    <div class="bar-row">
+      <span>C# (50%)</span>
+      <div class="bar"><div class="bar-fill" id="bar-csharp"></div></div>
+    </div>
+    <button id="animate-btn">Animate My Skills</button>
+  </section>
+
+  <!-- Task 6: Modifying Attributes -->
+  <section class="card" id="links">
+    <h2>🔗 Find Me Online <span class="task">Task 6</span></h2>
+    <p><a id="social-link" href="https://github.com/YOUR-USERNAME" target="_blank">My GitHub</a></p>
+    <p class="muted" id="link-info">Current link: https://github.com/EEw33/</p>
+    <button id="link-btn">Change Link</button>
+  </section>
+
+  <!-- Task 7: Form Interaction -->
+  <section class="card" id="contact">
+    <h2>✉️ Contact <span class="task">Task 7</span></h2>
+    <form>
+      <label for="name-input">Name:</label>
+      <input type="text" id="name-input" placeholder="Your name">
+      <label for="email-input">Email:</label>
+      <input type="email" id="email-input" placeholder="you@example.com">
+    </form>
+    <div class="preview">
+      <p>Name: <span id="name-preview"></span></p>
+      <p>Email: <span id="email-preview"></span></p>
+    </div>
+  </section>
+
+  <!-- Task 0: Setup -->
+  <footer>
+    <p id="jquery-status">Loading jQuery...</p>
+    <p>Arlan Narushev, IT-2513, Astana IT University, 2026</p>
+  </footer>
+
+</div>
+
+<!-- Task 0: jQuery from a CDN (must be loaded before script.js) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
