@@ -3,8 +3,8 @@
 **Name:** Arlan Narushev  
 **Group:** IT-2513
 
-**GitHub Pages:** https://github.com/EEw33/web6  
-**Repository:** 
+**GitHub Pages:** https://eew33.github.io/web6/  
+**Repository:** https://github.com/EEw33/web6
 
 This is my personal portfolio page made with HTML, CSS and jQuery 3.7.1. Every block on the page is one task of the assignment (the task number is written next to the block title).
 
